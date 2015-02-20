@@ -10,14 +10,16 @@ Upload the files to your website, turn off compilation, clear cache, etc.
 
 Create a form in a CMS page. Form method is POST and action is "formforwarder." 
 
-Add the required hidden field *template_code.* Optional fields include *forward,* which if it is not set, will use
-the default Contacts email (in the admin under System -> Configuration -> General -> Contacts -> Email Options), 
-and *redirect* which is the page to redirect to after form submission, such as a CMS thank you page.
+Add the required hidden field *template_code* and *form_key.* Optional fields 
+include *forward,* which if it is not set, will use the default Contacts email 
+(in the admin under System -> Configuration -> General -> Contacts -> Email 
+Options), and *redirect* which is the page to redirect to after form submission, 
+such as a CMS thank you page.
 
 ```
 <form id="form-forwarder-example-form" action="{{store url="formforwarder"}}" enctype="multipart/form-data" method="post">
 	<div class="fieldset">
-                <input type="hidden" name="form_key" value="{{block type="aydus_formforwarder/formkey"}}" />
+		<input type="hidden" name="form_key" value="{{block type="aydus_formforwarder/formkey"}}" />
 		<input type="hidden" name="forward" value="davidt@aydus.com" /> 
 		<input type="hidden" name="template_code" value="Form Forwarder Example Form" /> 
 		<input type="hidden" name="redirect" value="thanks" /> 
