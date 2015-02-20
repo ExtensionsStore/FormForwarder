@@ -14,8 +14,17 @@ class Aydus_FormForwarder_IndexController extends Mage_Core_Controller_Front_Act
     const XML_PATH_EMAIL_SENDER     = 'contacts/email/sender_email_identity';
     
     public function indexAction()
-    {
+    {        
         $refererUrl = $this->_getRefererUrl();
+        
+        if (!$this->_validateFormKey()) {
+            
+            Mage::getSingleton('customer/session')->addError(Mage::helper('contacts')->__('Unable to submit your request. Please, try again later'));
+            $this->getResponse()->setRedirect($refererUrl);      
+            
+            return;
+        }
+        
         $post = $this->getRequest()->getPost();
         
         if ( $post ) {

@@ -17,6 +17,7 @@ and *redirect* which is the page to redirect to after form submission, such as a
 ```
 <form id="form-forwarder-example-form" action="{{store url="formforwarder"}}" enctype="multipart/form-data" method="post">
 	<div class="fieldset">
+                <input type="hidden" name="form_key" value="{{block type="aydus_formforwarder/formkey"}}" />
 		<input type="hidden" name="forward" value="davidt@aydus.com" /> 
 		<input type="hidden" name="template_code" value="Form Forwarder Example Form" /> 
 		<input type="hidden" name="redirect" value="thanks" /> 
