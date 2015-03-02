@@ -1,7 +1,13 @@
 Form Forwarder
 ==============
 
-Lightweight module to create a form in a CMS page and submit anywhere.
+Lightweight module to submit a form in a CMS page to anywhere.
+
+Description
+-----------
+This is a light weight module that allows you to simply create a form in a CMS landing page. 
+By adding a few hidden fields, you can then have the form submit to any email address you choose. 
+File uploads are also supported, which will be emailed to the recipient as attachments.
 
 How to use
 ----------
