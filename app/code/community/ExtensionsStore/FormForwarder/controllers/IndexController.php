@@ -3,12 +3,12 @@
 /**
  * FormForwarder controller
  *
- * @category   Aydus
- * @package    Aydus_FormForwarder
- * @author     Aydus Consulting <davidt@aydus.com>
+ * @category   ExtensionsStore
+ * @package    ExtensionsStore_FormForwarder
+ * @author     Extensions Store <admin@extensions-store.com>
  */
 
-class Aydus_FormForwarder_IndexController extends Mage_Core_Controller_Front_Action
+class ExtensionsStore_FormForwarder_IndexController extends Mage_Core_Controller_Front_Action
 {
     const XML_PATH_EMAIL_RECIPIENT  = 'contacts/email/recipient_email';
     const XML_PATH_EMAIL_SENDER     = 'contacts/email/sender_email_identity';

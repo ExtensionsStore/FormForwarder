@@ -1,17 +1,17 @@
 {
-    "name": "aydus/formforwarder",
+    "name": "extensions-store/formforwarder",
     "license": "GPL-3.0",
     "type": "magento-module",
     "description": "Lightweight module to submit a form in a CMS page to anywhere.",
-    "homepage": "https://github.com/aydus/FormForwarder.git",
+    "homepage": "https://github.com/ExtensionStore/FormForwarder.git",
     "require": {
         "php": ">=5.3",
         "magento-hackathon/magento-composer-installer": "*"
     },
     "authors": [
         {
-            "name": "David Tay",
-            "email": "davidt@aydus.com",
+            "name": "Extensions Store",
+            "email": "admin@extensions-store.com",
             "role": "Author/Maintainer"
         }
     ]

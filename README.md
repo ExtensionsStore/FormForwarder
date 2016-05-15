@@ -25,8 +25,8 @@ such as a CMS thank you page.
 ```
 <form id="form-forwarder-example-form" action="{{store url="formforwarder"}}" enctype="multipart/form-data" method="post">
 	<div class="fieldset">
-		<input type="hidden" name="form_key" value="{{block type="aydus_formforwarder/formkey"}}" />
-		<input type="hidden" name="forward" value="davidt@aydus.com" /> 
+		<input type="hidden" name="form_key" value="{{block type="extensions_store_formforwarder/formkey" output="toHtml"}}" />
+		<input type="hidden" name="forward" value="admin@extensions-store.com" /> 
 		<input type="hidden" name="template_code" value="Form Forwarder Example Form" /> 
 		<input type="hidden" name="redirect" value="thanks" /> 
 		<input type="hidden" name="MAX_FILE_SIZE" value="25000000">

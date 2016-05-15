@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * FormForwarder module config
+ *
+ * @category   ExtensionsStore
+ * @package    ExtensionsStore_FormForwarder
+ * @author     Extensions Store <admin@extensions-store.com>
+ */
+-->
+<config>
+    <modules>
+        <ExtensionsStore_FormForwarder>
+            <version>1.1.0</version>
+        </ExtensionsStore_FormForwarder>
+    </modules>
+     <frontend>
+        <routers>
+            <formforwarder>
+                <use>standard</use>
+                <args>
+                    <module>ExtensionsStore_FormForwarder</module>
+                    <frontName>formforwarder</frontName>
+                </args>
+            </formforwarder>
+        </routers>
+    </frontend>     
+    <global>
+        <blocks>
+            <extensions_store_formforwarder>
+                <class>ExtensionsStore_FormForwarder_Block</class>
+            </extensions_store_formforwarder>
+            <formforwarder>
+                <class>ExtensionsStore_FormForwarder_Block</class>
+            </formforwarder>
+        </blocks>        
+        <helpers>
+            <extensions_store_formforwarder>
+                <class>ExtensionsStore_FormForwarder_Helper</class>
+            </extensions_store_formforwarder>
+            <formforwarder>
+                <class>ExtensionsStore_FormForwarder_Helper</class>
+            </formforwarder>
+        </helpers>
+        <resources>
+            <extensions_store_formforwarder_setup>
+                <setup>
+                    <module>ExtensionsStore_FormForwarder</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </extensions_store_formforwarder_setup>
+        </resources>           
+    </global>         
+</config>
